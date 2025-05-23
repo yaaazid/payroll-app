@@ -25,7 +25,7 @@
                 <flux:navlist.item icon="circle-stack" :href="`#`" :current="`#`" wire:navigate>{{ __('Payroll') }}
                 </flux:navlist.item>
                 <!-- Time & Attendance -->
-                <flux:navlist.item icon="calendar-date-range" :href="`#`" :current="`#`" wire:navigate>{{ __('Time &
+                <flux:navlist.item icon="calendar-date-range" :href="route('admin.time-attendance')" :current="`#`" wire:navigate>{{ __('Time &
                     Attendance') }}</flux:navlist.item>
                 <!-- Leave Management -->
                 <flux:navlist.item icon="inbox-arrow-down" :href="`#`" :current="`#`" wire:navigate>{{ __('Leave

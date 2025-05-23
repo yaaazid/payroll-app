@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Overtime extends Model
 {
-    protected $guarded = [];
+    protected $fillable = ['employee_id', 'overtime_date', 'start_time', 'end_time', 'duration_hours', 'reason'];
 
     public function employee()
     {

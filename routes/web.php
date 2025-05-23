@@ -5,6 +5,7 @@ use Livewire\Volt\Volt;
 use App\Livewire\CompanySetting;
 use App\Livewire\SalaryComponent;
 use App\Livewire\TaxSetting;
+use App\Livewire\TimeAttendance;
 
 
 
@@ -33,6 +34,7 @@ Route::middleware(['auth', 'admin'])->name('admin.')->group(function () {
     Route::view('departments-and-positions', 'admin.departments-and-positions')->name('departments-and-positions');
     Route::get('salary-component', SalaryComponent::class)->name('salary-components');
     Route::get('tax-setting',TaxSetting::class)->name('tax-settings');
+    Route::get('time-attendance', TimeAttendance::class)->name('time-attendance');
 });
 
 require __DIR__ . '/auth.php';

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Attendance extends Model
 {
-    protected $guarded = [];
+    protected $fillable = ['employee_id', 'attendance_date', 'check_in', 'check_out', 'notes'];
 
     public function employee()
     {
